@@ -11,7 +11,7 @@ namespace TriangleTracker.Tests
     public void IsTriangle_CreatesTriangle_True()
     {
       Triangle testTriangle = new Triangle();
-      Assert.AreEqual(true, testTriangle.IsTriangle(3,3,3));
+      Assert.AreEqual(true, testTriangle.IsTriangle(3,4,5));
     }
   }
 }
