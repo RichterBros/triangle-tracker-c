@@ -25,7 +25,7 @@ namespace TriangleTracker
       }
       else
       {
-        return "hey";
+        return "Scalene";
       }
     }
   }
