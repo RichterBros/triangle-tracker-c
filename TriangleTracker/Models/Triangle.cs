@@ -9,13 +9,20 @@ namespace TriangleTracker
     public int Side2;
     public int Side3;
   
-    public bool IsTriangle(int side1, int side2, int side3)
+    public string IsTriangle(int side1, int side2, int side3)
     {
       if (side1 + side2 <= side3 || side2 + side3 <= side1 || side3 + side1 <= side2)
       {
-        return false;
+        return "Not a triangle";
       }
-      return true;
+      else if ((side1 == side2) && (side2 == side3))
+      {
+        return "Equilateral";
+      }
+      else
+      {
+        return "Hey";
+      }
     }
   }
 }
